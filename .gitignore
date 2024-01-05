@@ -1,0 +1,8 @@
+node_modules
+*.realm
+*.realm.lock
+*.realm.note
+build
+.vsvode
+*.realm
+default.realm.management

@@ -1,0 +1,19 @@
+{
+  "name": "realm_sample_app",
+  "version": "1.0.0",
+  "description": "database",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node ./src/index.ts"
+  },
+  "author": "Emi Roberti",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "realm": "^12.5.1"
+  }
+}
