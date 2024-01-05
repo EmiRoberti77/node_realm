@@ -70,4 +70,19 @@ export class DB {
       resolve(task);
     });
   }
+
+  public findBy(status: 'open' | 'closed') {
+    return new Promise((resolve, reject) => {
+      if (!this.realm) {
+        reject({
+          error: initError,
+        });
+        return;
+      }
+
+      const allTask = this.realm.objects(Task);
+      const allOpenTasks = allTask.filtered('status == $0', status);
+      resolve(allOpenTasks);
+    });
+  }
 }
